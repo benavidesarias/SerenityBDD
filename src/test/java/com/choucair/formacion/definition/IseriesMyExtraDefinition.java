@@ -21,7 +21,7 @@ public class IseriesMyExtraDefinition {
 	@When("^Autenticar MyExtra$")
 	public void autenticar_MyExtra() throws Throwable {
 		Properties prop = new Properties();
-		prop.load(new FileReader("D:\\JAVA\\documentos\\com.choucair.base\\dbconfig.properties"));
+		prop.load(new FileReader("dbconfig.properties"));
 		this.user = prop.getProperty("db.user");
 		this.password = prop.getProperty("db.password");
 		iseriesMyExtraSteps.Autenticar_Extra(user, password);

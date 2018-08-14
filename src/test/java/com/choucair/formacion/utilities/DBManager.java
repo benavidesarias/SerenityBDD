@@ -18,7 +18,7 @@ public class DBManager {
 	public void inicialice() {
 		try {
 			Properties prop = new Properties();
-			prop.load(new FileReader("D:\\JAVA\\documentos\\com.choucair.base\\dbConfig.properties"));
+			prop.load(new FileReader("dbConfig.properties"));
 			this.url = prop.getProperty("db.url");
 			this.user = prop.getProperty("db.user");
 			this.password = prop.getProperty("db.password");

@@ -14,7 +14,7 @@ import net.serenitybdd.core.pages.PageObject;
 public class DB2Page extends PageObject{
 	
 	public String Armar_query_consulta_CNAME(String strDocumento) {
-		String strSQL = "select * from gplilibra.mytmpcname where CNNOSS = '<documento>'";
+		String strSQL = "select * from ptelibp.mytmpcname where CNNOSS = '<documento>'";
 		strSQL = strSQL.replace("<documento>", strDocumento);
 		return strSQL;
 	}
