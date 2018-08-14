@@ -8,6 +8,8 @@ import net.thucydides.core.annotations.DefaultUrl;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 
+import org.openqa.selenium.WebElement;
+
 
 @DefaultUrl("https://colorlib.com/polygon/metis/login.html")
 public class ColorlibLoginPage extends PageObject{
@@ -21,7 +23,7 @@ public class ColorlibLoginPage extends PageObject{
 	public WebElementFacade txtClave;
 	
 	//Boton Login
-	@FindBy(xpath="//*[@id='login']/form/button")
+	@FindBy(xpath="//*[@id=\'login\']/form/button")
 	public WebElementFacade btnSignIn;
 	
 	//Texto a verificar
@@ -30,6 +32,7 @@ public class ColorlibLoginPage extends PageObject{
 
 	
 	public void ingresarDatos(String strUsuario, String strClave) {
+		//System.out.println(strUsuario + strClave);
 		txtUsuario.sendKeys(strUsuario);
 		txtClave.sendKeys(strClave);
 		btnSignIn.click();

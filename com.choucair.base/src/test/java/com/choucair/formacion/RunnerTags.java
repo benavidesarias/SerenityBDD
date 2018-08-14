@@ -10,7 +10,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @CucumberOptions 
 ( 
  features = "src/test/resources/features/Colorlib/Forms/BlockAndInlineValidation.feature", 
- tags = "@CasoExitoso"
+ tags = "@CasoAlterno"
 )
 public class RunnerTags {
 
